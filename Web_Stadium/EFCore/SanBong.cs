@@ -55,4 +55,8 @@ public partial class SanBong
 
     // Anh san do Owner upload
     public virtual ICollection<AnhSanBong> AnhSanBongs { get; set; } = new List<AnhSanBong>();
+    public int ThoiGianGiuCho { get; set; } = 15;                     // phút
+    public int ThoiGianHuyTruocGioDa { get; set; } = 120;            // phút
+    public decimal PhanTramHoanCocDungHan { get; set; } = 1.00m;     // 100%
+    public decimal PhanTramHoanCocTreHan { get; set; } = 0.00m;      // 0%
 }
